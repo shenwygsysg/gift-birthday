@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Under The Alignment Of Virgo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<video id="bgvid" autoplay muted loop playsinline></video>
+<div class="veil"></div>
+<canvas id="sky"></canvas>
+
+<audio id="aud" loop preload="auto" src=""></audio>
+<div class="player glass" id="player">
+  <button id="pp" aria-label="Play or pause">▶</button>
+  <div class="pinfo"><div class="ptitle" id="ptitle">Our Song</div><div class="pbar" id="pbar"><i id="pfill"></i></div></div>
+  <div class="eq"><b></b><b></b><b></b></div>
+</div>
+
+<main>
+<section class="hero">
+  <div class="sym">♍</div>
+  <h1>Under The Alignment<br>Of Virgo</h1>
+  <p>Spica, the brightest ear of wheat in the sky, has been quietly guiding me toward you all along.</p>
+  <div class="scroll">Scroll gently</div>
+</section>
+
+<section class="reveal">
+  <div class="eyebrow">Virgo Constellation</div>
+  <h2>Whispers</h2>
+  <p class="lede">Every star holds something I never say out loud enough. Touch one.</p>
+  <div class="stars" id="stars"></div>
+</section>
+
+<section class="reveal">
+  <div class="eyebrow">Celestial Dates</div>
+  <h2>The Wheel</h2>
+  <p class="lede">Let the universe decide our next adventure.</p>
+  <div class="wheelwrap">
+    <div class="wheelbox"><div class="pin"></div><canvas id="wheel"></canvas></div>
+    <button class="btn" id="spin">Spin</button>
+    <div id="result"></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="eyebrow">Open When</div>
+  <h2>Celestial Letters</h2>
+  <p class="lede">Sealed with starlight, for the moments you might need them.</p>
+  <div class="letters" id="letters"></div>
+</section>
+
+<section class="reveal">
+  <div class="eyebrow">Starlight Orbit</div>
+  <h2>Our Timeline</h2>
+  <p class="lede">The moments that bent my orbit toward yours.</p>
+  <div class="tl" id="tl"></div>
+</section>
+
+<section class="reveal">
+  <div class="eyebrow">Cosmic Voucher</div>
+  <h2>Scratch to Reveal</h2>
+  <p class="lede">Drag across the starlight dust to uncover your gift,.</p>
+  <div class="voucher">
+    <div class="prize"><small>Valid forever · No expiry</small><h3>One Late-Night Stargazing Drive &amp; Desserts</h3><p>Redeemable any night you ask. Driver, playlist and dessert: all me.</p></div>
+    <canvas id="scratch"></canvas>
+  </div>
+</section>
+</main>
+
+<footer>Just for you, my favorite <b>Virgo</b> ♍</footer>
+
+<div class="modal" id="modal"><div class="paper glass"><h3 id="mt"></h3><p id="mp"></p><button class="btn" id="mc">Close</button></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
